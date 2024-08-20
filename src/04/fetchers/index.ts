@@ -13,3 +13,7 @@ const host = (path: string) => `https://myapi.testing.com${path}`;
 export async function getMyProfile(): Promise<Profile> {
   return fetch(host('/my/profile')).then(handleResponse);
 }
+
+export async function getMyArticle() {
+  return fetch(host('/my/articles')).then(handleResponse);
+}
