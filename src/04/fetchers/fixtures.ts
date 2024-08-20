@@ -1,4 +1,4 @@
-import { Articles, HttpError } from './type';
+import { Article, Articles, HttpError } from './type';
 
 // 오류 발생 시 throw 되는 data
 export const httpError: HttpError = {
@@ -30,4 +30,12 @@ export const getMyArticlesData: Articles = {
       body: '제스트는 단위 테스트처럼 UI 컴포넌트를 테스트할 수 있다',
     },
   ],
+};
+
+export const postMyArticleData: Article = {
+  id: 'xxxxxxx-123456',
+  createdAt: '2022-07-19T22:38:41.005Z',
+  tags: ['testing', 'react'],
+  title: '제스트로 시작하는 리액트 컴포넌트 테스트',
+  body: '제스트는 단위 테스트처럼 UI 컴포넌트를 테스트할 수 있다',
 };
